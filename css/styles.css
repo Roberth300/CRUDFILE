@@ -1,0 +1,72 @@
+body {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text for better readability */
+    margin: 0px;
+    height: 2000px; /* To keep header and footer static, covering the entire screen */
+    display: flex; /* Added to make flex-direction effective */
+    flex-direction: column;
+}
+.navbar {
+    background-color: black; /* Dark black header */
+    top: 0px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    z-index: 1000; /* Ensures that the header is above other elements */
+}
+.navbar-brand img {
+    width: 180px;
+    height: 130px;
+    border-radius: 8px;
+}
+.navbar-nav .nav-item .nav-link {
+    color: white; /* Navigation link text color */
+    font-size: 22px;/* font size of words*/
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: #dfe6e9; /* Text color of links on hover */
+}
+.container {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    padding-top: 100px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
+    overflow-y: auto;
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+ /* Make sure the html and body fill the full height of the window */
+  html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensures that the main content occupies the available space */
+body > .container {
+    flex: 1;
+    
+    
+}
+
+/* Footer style */
+footer.footer {
+    background-color: black; /* black color */
+    color: #dfe6e9; /* Light text color */
+    padding: 20px 0; /* Large vertical spacing */
+    text-align: center; /* Center the text in the footer */
+    margin-top: auto; /* Push the footer to the bottom */
+    z-index: 1000;/* Ensures that the footer is down other elements */
+} 
